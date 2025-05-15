@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #4a00e0, #8e2de2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .player-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+  }
+  
+  .controls button {
+    font-size: 1.5rem;
+    margin: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #seek-bar,
+  #volume {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  #playlist {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #playlist li {
+    padding: 10px;
+    background: #2d2d44;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #playlist li:hover,
+  #playlist li.active {
+    background-color: #44446a;
+  }
+  
+  .time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 400px) {
+    .player-container {
+      width: 90%;
+    }
+  }
+  
